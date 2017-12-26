@@ -38,7 +38,7 @@ public class pdfController {
 	}*/
 	
 	@GetMapping(path = "pdf/{jrxml}")
-    public void getPdf(@PathVariable String jrxml,@RequestParam(name = "name", defaultValue = "�R�c") String name, HttpServletResponse response) throws Exception {
+    public void getPdf(@PathVariable String jrxml,@RequestParam(name = "name", defaultValue = "山田") String name, HttpServletResponse response) throws Exception {
 		Resource resource = context.getResource("classpath:jasperreports/"+jrxml+".jrxml");
         System.out.println(resource.toString());
         InputStream inputStream = resource.getInputStream();
