@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+ 
+    <fontFamily name="custom">
+        <normal><![CDATA[fonts/comic.ttf]]></normal>
+        <bold><![CDATA[fonts/comicbd.ttf]]></bold>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+    
+    <fontFamily name="ipaexg">
+        <normal>fonts/ipaexg.ttf</normal>
+<!--    <bold>太字フォント ファイルの相対パス</bold> -->
+<!--    <italic>イタリック フォント ファイルの相対パス</italic> -->
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="ipaexm">
+        <normal>fonts/ipaexm.ttf</normal>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+    </fontFamily>
+ 
+</fontFamilies>
