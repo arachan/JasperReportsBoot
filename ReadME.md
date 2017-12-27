@@ -25,7 +25,8 @@ For example
 3. browser access to http://localhost:8080/japan 
 4. view PDF from japan.jrxml
 
-##Prarameter?
+## Prarameter?
+
 Unn....
 
 JasperBoot 日本語
