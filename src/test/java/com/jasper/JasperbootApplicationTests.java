@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Jasperboot1ApplicationTests {
+public class JasperbootApplicationTests {
 
 	@Test
 	public void contextLoads() {
