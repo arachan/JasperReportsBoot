@@ -33,7 +33,7 @@ JRXML TemplateからPDFを表示するためのプログラム。
 Spring Bootで出来てます。
 サーブレットコンテナなしでどこでも実行可能です。
 
-##　起動方法
+##　起動方法 
 1. STSにGit Clone
 2. STS上でBuild and Run.
 3. ブラウザーで http://localhost:8080/ にアクセス
