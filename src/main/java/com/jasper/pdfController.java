@@ -7,7 +7,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
@@ -30,24 +29,24 @@ public class pdfController {
 	
     @Autowired
     ApplicationContext context;
-
-	/*private pdfController(@Value("classpath:jasperreports/test_old.jrxml") Resource jrxml) throws Exception {
-	        try (InputStream inputStream = jrxml.getInputStream()) {
-	            this.report = JasperCompileManager.compileReport(inputStream);
-	        }
-	}*/
 	
 	@GetMapping(path = "pdf/{jrxml}")
     public void getPdf(@PathVariable String jrxml,@RequestParam(name = "name", defaultValue = "山田") String name, HttpServletResponse response) throws Exception {
+		//Get JRXML template from resources folder
 		Resource resource = context.getResource("classpath:jasperreports/"+jrxml+".jrxml");
-        System.out.println(resource.toString());
+        //Compile to jasperReport
         InputStream inputStream = resource.getInputStream();
 		this.report=JasperCompileManager.compileReport(inputStream);
+		//Parameters Set
         Map<String, Object> params = new HashMap<>();
         params.put("name", name);
+        //Data source Set
         JRDataSource dataSource = new JREmptyDataSource();
+        //Make jasperPrint
         JasperPrint jasperPrint = JasperFillManager.fillReport(report, params, dataSource);
+        //Media Type
         response.setContentType(MediaType.APPLICATION_PDF_VALUE);
+        //Export PDF Stream
         JasperExportManager.exportReportToPdfStream(jasperPrint, response.getOutputStream());
     }
 }
