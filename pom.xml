@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.jasper</groupId>
-	<artifactId>jasperboot1</artifactId>
+	<artifactId>jasperboot2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
