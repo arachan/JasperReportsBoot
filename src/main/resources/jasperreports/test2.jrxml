@@ -7,9 +7,9 @@
 			<staticText>
 				<reportElement x="180" y="0" width="200" height="20" uuid="33bc60c5-4a96-466c-a1dd-c613c10c23d8"/>
 				<textElement>
-					<font fontName="ipaexm"/>
+					<font fontName="Serif"/>
 				</textElement>
-				<text><![CDATA[こんにちは 世界!]]></text>
+				<text><![CDATA[Hello World!]]></text>
 			</staticText>
 		</band>
 	</detail>
