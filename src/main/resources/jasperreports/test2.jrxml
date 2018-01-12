@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Report" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="734fe629-d5df-4bac-ad7a-39df34992f00">
+	<style name="Sans_Normal" isDefault="true" fontName="ipaexm" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="0" width="200" height="20" uuid="33bc60c5-4a96-466c-a1dd-c613c10c23d8"/>
+				<textElement>
+					<font fontName="ipaexm"/>
+				</textElement>
+				<text><![CDATA[こんにちは 世界!]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
