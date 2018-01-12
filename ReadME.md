@@ -22,8 +22,8 @@ So, This Make PDF file include Japanese Font.
 For example
 1. japan.jrxml file add to src/main/resouces/jasperreports  
 2. build and run
-3. browser access to http://localhost:8080/pdf/japan 
-4. view PDF from japan.jrxml
+3. browser access to http://localhost:8080/pdf/test 
+4. view PDF from test.jrxml
 
 ## Prarameter?
 
@@ -54,10 +54,10 @@ Font名は　IPAex明朝: ipaexm IPAexゴシックは ipaexg としています�
 ## どんなJRXMLファイルにも対応
 
 1. src/main/resouces/jasperreportsに jrxmlファイルを作成して入れます。
-   例えばjapan.jrxmlとしましょう。
+   例えばtest.jrxmlとしましょう。
 2. build and run
-3. http://localhost:8080/pdf/japan とアクセス
-4. japan.jrxmlをPDFとして表示してくれます。
+3. http://localhost:8080/pdf/test とアクセス
+4. test.jrxmlをPDFとして表示してくれます。
 
 ## License
 
