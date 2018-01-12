@@ -16,7 +16,7 @@ So, execute any where and nothing Servlet Container.
 ## Font Extensions
 This program include font extensions.
 I set Japanese font,IPAex Mincho (Serif) and IPAex Gothic (SanSerif).
-So, This Make PDF file include Japanese Font.
+So, This make PDF file include Japanese Font.
 
 ## Any JRXML template make PDF
 For example
