@@ -8,7 +8,7 @@
     </fontFamily>
     
     <fontFamily name="ipaexg">
-        <normal>fonts/ipaexg.ttf</normal>
+        <normal>fonts/ipaexg/ipaexg.ttf</normal>
 <!--    <bold>太字フォント ファイルの相対パス</bold> -->
 <!--    <italic>イタリック フォント ファイルの相対パス</italic> -->
         <pdfEncoding>Identity-H</pdfEncoding>
@@ -16,7 +16,7 @@
     </fontFamily>
 
     <fontFamily name="ipaexm">
-        <normal>fonts/ipaexm.ttf</normal>
+        <normal>fonts/ipaexm/ipaexm.ttf</normal>
         <pdfEncoding>Identity-H</pdfEncoding>
         <pdfEmbedded>true</pdfEmbedded>
     </fontFamily>
