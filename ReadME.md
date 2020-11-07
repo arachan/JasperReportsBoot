@@ -29,6 +29,12 @@ For example
 
 Unn....
 
+## Recomend
+
+I recommend gradle version
+
+https://github.com/arachan/JasperReportBoot.git
+
 JasperBoot 日本語
 ===========
 JRXML TemplateからPDFを表示するためのプログラム。
