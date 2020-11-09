@@ -2,21 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.jasper</groupId>
-	<artifactId>jasperboot2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>jasperboot1</name>
-	<description>Demo project for SpringBoot JasperReport PDF</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<groupId>com.jasper</groupId>
+	<artifactId>jasperboot2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>jasperboot1</name>
+	<description>Demo project for SpringBoot JasperReport PDF</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,10 +37,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- protected An illegal reflective access operation. for jasperreports -->
 		<dependency>
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
-			<version>2.12.0</version>
+			<version>2.12.0.SP06</version>
 		</dependency>
 	</dependencies>
 
@@ -57,6 +56,15 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- for xercesImpl 2.12.0.SP06 -->
+	<repositories>
+		<repository>
+			<id>JBoss Public</id>
+			<name>JBoss Public Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/public/</url>
+		</repository>
+	</repositories>
 
 
 </project>
