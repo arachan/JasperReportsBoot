@@ -8,7 +8,6 @@
 		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
 	<groupId>com.jasper</groupId>
 	<artifactId>jasperboot2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -36,6 +35,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- protected An illegal reflective access operation. for jasperreports -->
 		<dependency>
