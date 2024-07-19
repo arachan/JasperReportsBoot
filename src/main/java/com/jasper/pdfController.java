@@ -30,7 +30,7 @@ public class pdfController {
     	
 	@GetMapping(path = "pdf/{jrxml}")
 	@ResponseBody
-    public void getPdf(@PathVariable String jrxml ,HttpServletResponse response) throws Exception {
+    public void getPdf(@PathVariable("jrxml") String jrxml ,HttpServletResponse response) throws Exception {
 		//Get JRXML template from resources folder
 		Resource resource = context.getResource("classpath:jasperreports/"+jrxml+".jrxml");
         //Compile to jasperReport
